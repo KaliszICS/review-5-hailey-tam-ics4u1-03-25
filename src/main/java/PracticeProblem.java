@@ -45,7 +45,7 @@ public class PracticeProblem {
 		System.out.print("Input a number: ");
 		Double num4 = in.nextDouble();
 		in.nextLine();
-		System.out.println(Math.sqrt(Math.round(num4)));
+		System.out.println(Math.round(Math.sqrt(num4)));
 	}
 
 	public static void q4() {
@@ -96,8 +96,8 @@ public class PracticeProblem {
 		String word2 = in.nextLine();
 		System.out.print("Input a letter: ");
 		String letter = in.nextLine();
-		in.nextLine();
 		System.out.println(word2.indexOf(letter));
+		System.out.println(word2.lastIndexOf(letter));
 	}
 
 	public static void q9() {
@@ -105,7 +105,7 @@ public class PracticeProblem {
 		Scanner in = new Scanner (System.in);
 		System.out.print("Input a sentence: ");
 		String sentence2 = in.nextLine();
-		System.out.print("Your sentence is length " + sentence2.length() + "characters long"); ;
+		System.out.println("Your sentence is " + sentence2.length() + " characters long"); ;
 	}
 	public static void q10() {
 		//Write question 5 code here
@@ -115,8 +115,8 @@ public class PracticeProblem {
 		System.out.print("Input a word to replace: ");
 		String word = in.nextLine();
 		System.out.print("What word would you like to replace it with: ");
-		String replace = in.nextLine();
-		System.out.println(sentence.replaceAll(replace,word));
+		String replaceWord = in.nextLine();
+		System.out.println(sentence.replaceAll(word, replaceWord));
 	}
 
 	public static void q11() {
@@ -134,7 +134,7 @@ public class PracticeProblem {
 		System.out.print("Input a word: ");
 		String word = in.nextLine();
 		System.out.println(word.substring(0,4));
-		System.out.println(word.substring(4,0));
+		System.out.println(word.substring(word.length()-4));
 	}
 	
 
